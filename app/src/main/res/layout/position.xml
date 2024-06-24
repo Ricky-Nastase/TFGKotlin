@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/posLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@drawable/small_red_stroke_corners"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/posName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+</LinearLayout>

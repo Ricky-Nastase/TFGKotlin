@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterAdmin">
+
+    <LinearLayout
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/addPlayerImg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/profile"
+            app:civ_border_color="@color/granet"
+            app:civ_border_width="2dp" />
+
+        <EditText
+            android:id="@+id/addPlayUsername"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/small_red_stroke"
+            android:drawableStart="@drawable/person"
+            android:drawablePadding="12dp"
+            android:hint="@string/nombre_de_usuario"
+            android:inputType="text"
+            android:maxLength="13"
+            android:padding="12dp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/addPlayEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/small_red_stroke"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="12dp"
+            android:hint="@string/correo_electr_nico"
+            android:inputType="textEmailAddress"
+            android:maxLength="30"
+            android:padding="12dp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/addPlayPass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/small_red_stroke"
+            android:drawableStart="@drawable/key"
+            android:drawablePadding="12dp"
+            android:hint="@string/contrase_a"
+            android:inputType="textPassword"
+            android:longClickable="false"
+            android:maxLength="16"
+            android:padding="12dp"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/addPlayWeight"
+                android:layout_width="145dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/small_red_stroke"
+                android:drawablePadding="12dp"
+                android:hint="@string/peso_kg"
+                android:inputType="numberDecimal"
+                android:longClickable="false"
+                android:maxLength="6"
+                android:padding="12dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/addPlayHeight"
+                android:layout_width="145dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/small_red_stroke"
+                android:drawablePadding="12dp"
+                android:hint="@string/altura_cm"
+                android:inputType="numberDecimal"
+                android:longClickable="false"
+                android:maxLength="6"
+                android:padding="12dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/addPositionsSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/small_red_stroke"
+            android:padding="12dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:overlapAnchor="false"
+            android:drawSelectorOnTop="false"
+            android:spinnerMode="dropdown"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/addPlayBirthdate"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/small_red_stroke"
+                android:drawablePadding="12dp"
+                android:hint="@string/fecha_de_nacimiento"
+                android:longClickable="false"
+                android:padding="12dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/addPlayNumber"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/small_red_stroke"
+                android:drawableStart="@drawable/number"
+                android:drawablePadding="12dp"
+                android:hint="@string/n_de_dorsal"
+                android:inputType="numberDecimal"
+                android:longClickable="false"
+                android:maxLength="3"
+                android:padding="12dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rbGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:checkedButton="@+id/rdbOne"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbMascAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/masculino" />
+
+            <RadioButton
+                android:id="@+id/rbFemAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/femenino" />
+
+            <RadioButton
+                android:id="@+id/rbOtherAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/otro" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/addPlayAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/accept_button"
+            android:paddingStart="30dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="10dp"
+            android:text="@string/aceptar"
+            android:textColor="@color/granet"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutPlayerNav" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/addPlayBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+</androidx.constraintlayout.widget.ConstraintLayout>

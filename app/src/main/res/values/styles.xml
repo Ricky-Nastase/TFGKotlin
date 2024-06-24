@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="CustomSnackbarTheme">
+        <item name="snackbarStyle">@style/MySnackBarStyle</item>
+    </style>
+    <style name="MySnackBarStyle" parent="Widget.Design.Snackbar">
+        <item name="android:background">@color/granet</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- CALENDAR STYLES -->
+    <style name="CalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/granet</item>
+    </style>
+    <style name="CalenderViewCustom" parent="Theme.AppCompat">
+        <item name="colorControlActivated">@color/granet</item>
+        <item name="android:textColorPrimary">@color/granet</item>
+    </style>
+    <style name="CalenderViewDateCustomText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@drawable/calendar_selector</item>
+    </style>
+    <style name="post" parent="">
+        <item name="cornerSize">7%</item>
+    </style>
+</resources>

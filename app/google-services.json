@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "420959218404",
+    "firebase_url": "https://tefege-6c565-default-rtdb.europe-west1.firebasedatabase.app/",
+    "project_id": "tefege-6c565",
+    "storage_bucket": "tefege-6c565.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420959218404:android:a92c72485c56a1ed2bdaf1",
+        "android_client_info": {
+          "package_name": "com.example.tfgkotlin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmDtxWJJBDONXSQPkBx2I8Ob9b0uQpduc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

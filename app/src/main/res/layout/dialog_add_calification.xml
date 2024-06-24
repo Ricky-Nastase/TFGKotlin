@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/simple_shape"
+    android:backgroundTint="@color/light_grey"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/trainingDate"
+        android:layout_width="wrap_content"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:layout_height="40dp"
+        android:background="@drawable/small_red_stroke_corners"
+        android:gravity="center"
+        android:hint="@string/fecha_de_entrenamiento"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtCalifDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="NO EXISTE ENTRENAMIENTO ESTE DÍA"
+        android:textColor="@color/granet"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/cancelAddCalif"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:background="@drawable/simple_granet_btn"
+        android:shadowColor="@color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:layout_marginTop="20dp"
+        android:text="@string/cancelar"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+</LinearLayout>
